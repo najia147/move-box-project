@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  /* Prevent scrolling when moving the box */
+}
+
+h1 {
+  font-size: 24px;
+}
+
+#myBox {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.1s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#resetButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#resetButton:hover {
+  background-color: darkred;
+}
+
+#moveCounter {
+  font-size: 18px;
+  font-weight: bold;
+}
